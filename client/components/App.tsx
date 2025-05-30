@@ -71,7 +71,7 @@ function App() {
   console.log('All objects have been returned in an array: ', data)
 
   return (
-    <>
+    <div id="news">
       {getAllwaysDisplayedContent()}
       <Nav selectedDate={selectedDate} onDateChange={handleDateChange} />
       <input
@@ -102,7 +102,7 @@ function App() {
         <FrontEndTesting />
         {/* <News /> */}
       </div>
-    </>
+    </div>
   )
 }
 

@@ -7,12 +7,7 @@ interface NavProps {
 }
 
 function Nav({ selectedDate, onDateChange }: NavProps) {
-  return (
-    <header className="header">
-      {/*  */}
-      <input className="date" type="date" id="date-input" value="2025-05-30" />
-    </header>
-  )
+  return <header className="header"></header>
 }
 
 export default Nav

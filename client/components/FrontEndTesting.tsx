@@ -36,12 +36,12 @@ function FrontEndTesting() {
 
   return (
     <>
-      <div className="app">
-        <h2>{data.heading}</h2>
+      {/* <div className="app"> */}
+      {/*  <h2>{data.heading}</h2>
         {data.body.split('\n').map((line, i) => {
           return <p key={i}>{line}</p>
         })}
-      </div>
+      </div> */}
       {/* <div>
         {placeholder.map((x, i) => {
           return (
@@ -54,7 +54,8 @@ function FrontEndTesting() {
       </div> */}
       <div id="formDiv">
         <form onSubmit={handleSubmit} className="form">
-          <label htmlFor="prompt">Change the news: </label>
+          <div id="bne">Butterfly News Effect: </div>
+          <label htmlFor="prompt">What happened: </label>
           <input
             name="prompt"
             id="prompt"
@@ -62,7 +63,7 @@ function FrontEndTesting() {
             onChange={handleChange}
             autoComplete="off"
           />
-          <button onClick={handleChange}>ENTER</button>
+
           <span> On the date: </span>
           <input
             className="date"
@@ -71,6 +72,7 @@ function FrontEndTesting() {
             value={date}
             onChange={handleDate}
           />
+          <button onClick={handleChange}>ENTER</button>
         </form>
       </div>
     </>

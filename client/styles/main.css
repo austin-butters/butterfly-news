@@ -1,5 +1,6 @@
 body {
   background-color: rgb(251, 242, 230);
+  margin: 0;
 }
 .headline {
   font-family: 'UnifrakturCook', cursive;
@@ -12,7 +13,6 @@ body {
 }
 .line {
   border-top: 1px solid #b8b6b6;
-
 }
 .icon-left {
   position: absolute;
@@ -35,4 +35,44 @@ body {
 
 .date:focus {
   border-color: #000;
+}
+
+.form {
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 225, 161);
+  width: 100%;
+  border: 1px solid black;
+  font-weight: 600;
+  justify-items: center;
+}
+
+.content {
+  margin-left: 10px;
+  width: 800px;
+}
+label {
+  margin-left: 10px;
+}
+button {
+  margin-left: 20px;
+  height: 30px;
+  background-color: rgb(139, 3, 3);
+  color: white;
+}
+
+#bne {
+  margin-left: 10px;
+  font-weight: 800;
+  font-size: larger;
+}
+
+#news {
+  justify-items: center;
+}
+
+#formDiv {
+  justify-items: center;
 }
