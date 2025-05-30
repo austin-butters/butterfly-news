@@ -29,7 +29,7 @@ router.get('/', async (req, res) => {
 
     const initialResponse = await genAI.models.generateContent({
       model: 'gemini-2.0-flash',
-      contents: `Generate a fake news article dated 2025-05-30, as what would have happened if ${input} on ${date}, make it outrageous and slightly humorous. Respond ONLY with plain text. DO NOT include any explanations, formatting, asterisks, or comments.`,
+      contents: `Generate a fake news article dated 2025-05-30, as what would have happened if ${input} on ${date}, make it outrageous and slightly humorous. Respond ONLY with plain text. DO NOT include any explanations, formatting, asterisks, or comments. the first line should always be a headline`,
     })
 
     if (

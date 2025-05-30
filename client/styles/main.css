@@ -76,3 +76,7 @@ button {
 #formDiv {
   justify-items: center;
 }
+
+#prompt {
+  width: 300px;
+}
